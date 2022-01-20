@@ -34,9 +34,3 @@ def cleanup(){
 cleanWs()
 
 }
-
-def cloneGit(){
-
-git branch: 'main', url: 'https://github.com/dipk-mish7/Deepak_shared_lib.git'
-
-}
