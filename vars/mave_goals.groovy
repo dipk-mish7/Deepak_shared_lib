@@ -1,7 +1,7 @@
 def compile(){
 
 echo "We are going to compile the pacakge"
-sh 'mvn clean compile'
+sh 'mvn compile'
 }
 
 def testing(){
