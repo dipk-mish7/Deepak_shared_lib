@@ -37,6 +37,6 @@ cleanWs()
 
 def cloneGit(){
 
-git branch: 'main', url: 'https://github.com/dipk-mish7/spring3hibernate.git'
+git branch: 'master', url: 'https://github.com/dipk-mish7/spring3hibernate.git'
 
 }
