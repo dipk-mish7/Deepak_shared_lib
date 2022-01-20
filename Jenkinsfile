@@ -27,5 +27,9 @@ pipeline {
                 mave_goals.publishReports()
             }
         }
+	always{
+	    script{
+	        mave_goals.cleanup()
+	    }
     }
 }
