@@ -28,6 +28,13 @@ recordIssues(tools: [checkStyle()])
 }
 
 
+def cleanup(){
+
+cleanWs()
+
+}
+
+
 
 
 
