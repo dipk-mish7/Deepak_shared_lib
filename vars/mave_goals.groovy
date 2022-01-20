@@ -13,6 +13,12 @@ sh 'mvn checkstyle:checkstyle'
 
 }
 
+def publishReports(){
+
+recordIssues(tools: [acuCobol()])
+
+}
+
 
 
 
