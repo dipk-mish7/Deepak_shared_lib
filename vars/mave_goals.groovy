@@ -24,7 +24,8 @@ sh 'mvn checkstyle:checkstyle'
 def publishReports(){
 
 recordIssues(tools: [checkStyle()])
-
+publishCoverage adapters: [coberturaAdapter('')], sourceFileResolver: sourceFiles('NEVER_STORE')
+recordIssues(tools: [pmdParser()])
 }
 
 
@@ -36,6 +37,6 @@ cleanWs()
 
 def cloneGit(){
 
-git branch: 'main', url: 'https://github.com/dipk-mish7/Deepak_shared_lib.git'
+git branch: 'main', url: 'https://github.com/dipk-mish7/spring3hibernate.git'
 
 }
