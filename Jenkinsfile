@@ -8,7 +8,8 @@ pipeline {
         
         stage('Clone'){
             steps{
-                git 'https://github.com/dipk-mish7/Deepak_shared_lib.git'
+                scripts{
+		   mave_goals.cloneGit()
             }
         }
         stage('Compile and Testing'){
